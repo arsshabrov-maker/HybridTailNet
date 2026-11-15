@@ -1,5 +1,8 @@
 # HybridTailNet: Solving Information Bottlenecks via Topological Metadata Tails
 
+[![DOI](https://zenodo.org/badge/1458637375.svg)](https://doi.org/10.5281/zenodo.24243846)
+
+
 Standard Multi-Layer Perceptrons (MLPs) treat every signal as a flat, memoryless scalar. When a network compresses data through narrow **bottleneck layers**, downstream neurons lose all structural context—they cannot tell whether a `0.0` came from an inactive sensor, missing data (`NaN`), or the sum of 100 active pathways.
 
 **HybridTailNet** introduces a new dual-node architecture where signals carry their own topological history ("tails") across layers, and specialized **Non-Neurons** periodically compress this history into context-aware decisions.
@@ -92,6 +95,23 @@ Suppose an active signal $x = 2.0$ enters a network where wide layers have **10 
 ---
 
 ## 🛠️ Quick Start
+---
+
+## 📜 Citation
+
+If you use **HybridTailNet** or dynamic topological metadata tails in your research, please cite this repository:
+
+```bibtex
+@software{hybridtailnet_2026,
+  title        = {HybridTailNet: Solving Information Bottlenecks via Topological Metadata Tails},
+  year         = {2026},
+  publisher    = {Zenodo},
+  version      = {v1.0.0},
+  doi          = {10.5281/zenodo.24243846},
+  url          = {https://doi.org/10.5281/zenodo.24243846}
+}
+```
+
 
 ```bash
 pip install -r requirements.txt
